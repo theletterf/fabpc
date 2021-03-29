@@ -1,12 +1,12 @@
 html { 
     background: url(bg.png) no-repeat;
-    -webkit-background-size: 80%;
-    -moz-background-size: 80%;
-    -o-background-size: 80%;
-    background-size: 80%;
+    -webkit-background-size: 70%;
+    -moz-background-size: 70%;
+    -o-background-size: 70%;
+    background-size: 70%;
     background-color: white;
     background-position:50% 50%;
-    background-size:cover;
+    background-size:90%;
     position:fixed;
     left:10%;
     top:10%;
@@ -37,15 +37,27 @@ h3 {
     width: 100% !important;
     min-height: 240px;
     min-width: 380px;
-    max-height: 460px;
-    max-width: 670px;
+}
+
+.notice {
+    font-family: monospace;
+    color: lightgrey;
+    text-align: center;
+    position: relative;
+    bottom: -5%;
+    font-size: 8px;
+}
+
+a {
+    font-family: monospace;
+    color: lightgrey;
 }
 
 .screen-container {
-    width: 55%;
+    width: 50%;
     position: absolute;
-    left: 40%;
-    top: 49%;
+    left: 41.5%;
+    top: 50%;
     -webkit-transform: translate(-42%, -53%);
     transform: translate(-42%, -53%);
     min-height: 240px;
