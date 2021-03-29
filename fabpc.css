@@ -44,8 +44,8 @@ h3 {
     color: lightgrey;
     text-align: center;
     position: relative;
-    bottom: -5%;
-    font-size: 8px;
+    bottom: 12px;
+    font-size: 10px;
 }
 
 a {
