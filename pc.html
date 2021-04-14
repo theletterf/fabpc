@@ -5,11 +5,31 @@
     <meta charset="utf-8">
     <title>:: FABPC ::</title>
     <link rel="stylesheet" href="fabpc.css">
+    <script>
+        function onReady(callback) {
+            var intervalId = window.setInterval(function() {
+                if (document.getElementsByClassName('pcjs-canvas')[0] !== undefined) {
+                window.clearInterval(intervalId);
+                callback.call(this);
+                }
+            }, 1000);
+        }
+
+        function setVisible(selector, visible) {
+            document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        }
+
+        onReady(function() {
+            setVisible('.pcjs-canvas', true);
+            setVisible('.lds-ripple', false);
+        });
+    </script>
 </head>
 
 <body>
     <div class="screen-container">
-        <div id="ibm5170-msdos622"></div>
+    <div class="lds-ripple"><div></div><div></div></div>    
+    <div id="ibm5170-msdos622"></div>
         <script src="pcx86.js"></script>
         <script>embedPCx86("ibm5170-msdos622","machine.xml","components.xsl");</script>
         <div class="notice">
